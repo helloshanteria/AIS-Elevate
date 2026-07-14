@@ -1,0 +1,18 @@
+July 14, 2026
+
+#Accomplishments
+Defined business requirements
+Designed engagement model
+Created Officer class
+Designed Officer methods
+Replaced Growth category with Initiative
+
+#Challenges
+Originally planned to include a Growth category.
+After reviewing AIS events, realized many growth activities were already counted as event participation.
+
+#Solution
+Created the Initiative category to recognize officers who contribute beyond their assigned responsibilities.
+
+#Next Steps
+Implement engagement calculations.
