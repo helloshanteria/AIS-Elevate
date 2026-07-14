@@ -1,11 +1,9 @@
-July 14
+#July 14#
 
 Today I learned the difference between:
-
 Fields
 Constructors
 Methods
 
 I also learned that software design begins with understanding the business problem before writing code.
-
 I originally planned to measure Growth Activities, but after analyzing the AIS event schedule, I realized that many growth activities would already be counted as event participation. I replaced that category with Initiative because it better reflects officers who go beyond their assigned responsibilities.
