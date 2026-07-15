@@ -2,9 +2,7 @@
 
 ## Officer Recognition & Analytics Platform
 
-AIS Elevate is a Java-based leadership analytics platform developed for the Georgia Gwinnett College Association for Information Systems (AIS) Student Chapter.
-
-The purpose of this project is to transform officer participation data into meaningful insights that support engagement, recognition, and leadership decision-making.
+AIS Elevate is a Java-based officer recognition and analytics tool designed for the AIS Student Chapter. The platform builds upon an existing Excel attendance tracker by transforming officer participation data into engagement scores and monthly recognition recommendations. Leadership can select a badge category, review all officers against the same requirements, and identify which officers qualify for recognition. The system supports decision-making but does not automatically award badges.
 
 ## Technologies
 
