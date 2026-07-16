@@ -64,21 +64,22 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 - Leadership development trends
 - Recognition recommendations based on historical data
 
-## AI Use
+## AI-Assisted Development Process
 
-AI was used as a project mentor, systems-analysis assistant, and Java learning resource.
+AIS Elevate was developed through an iterative design process using AI as a collaborative development and learning tool rather than a code generator.
 
-AI supported the project by helping with:
+Throughout the project, AI was used to brainstorm ideas, explain Java concepts, review object-oriented design decisions, and provide feedback on business requirements. Rather than accepting generated solutions as final, each feature was discussed, evaluated, and refined to ensure it aligned with the real-world needs of the AIS Student Chapter.
 
-- Requirements planning
-- Business-rule development
-- Java concept explanations
-- Code troubleshooting
-- Engagement-model revisions
-- Recognition-workflow design
-- Documentation organization
+As the project evolved, the focus shifted from building a simple engagement tracker to designing a leadership recognition platform. This transition came from continuously questioning the workflow, challenging assumptions, and redesigning the system to better reflect how leadership would actually conduct monthly officer recognition reviews.
 
-The application was not created as a one-click AI output. The final project direction, scoring model, recognition process, business rules, revisions, and implementation decisions were selected and refined by the developer.
+The development process emphasized:
+- Identifying the business problem before writing code
+- Designing the recognition workflow before implementation
+- Translating organizational processes into software requirements
+- Iteratively refining the system architecture through discussion and testing
+- Learning Java concepts while applying them to a real-world project
+
+AI served as a mentor and technical resource throughout development, while all business decisions, project direction, scoring models, recognition criteria, and system requirements were intentionally designed and refined by the developer.
 
 
 ## Application Workflow
