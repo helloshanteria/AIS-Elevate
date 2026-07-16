@@ -65,10 +65,28 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 - Recognition recommendations based on historical data
 
 
+## Application Workflow
+
+### Welcome Screen
+
+The application begins by collecting officer information for the monthly recognition review. Leadership enters officer participation data, which is used to calculate engagement metrics and support the recognition evaluation process.
+
 ![Welcome Screen](Images/welcome-screen.png)
+
+### Officer Engagement Summary
+
+AIS Elevate calculates each officer's engagement using executive meeting attendance, role completion, event participation, and initiative contributions. The system generates an overall engagement score and engagement level to provide leadership with a quick overview of officer performance.
 
 ![Officer Summary](Images/officer-summary.png)
 
+### Monthly Recognition Review
+
+Leadership selects a recognition category to evaluate during the monthly review. Each category contains its own set of business rules and requirements, allowing officers to be evaluated consistently for a specific type of contribution.
+
 ![Recognition Menu](Images/recognition-menu.png)
+
+### Recognition Results
+
+After evaluating all participating officers against the selected recognition criteria, AIS Elevate displays the officers who qualify for recognition. The system provides recommendations to support leadership decision-making while leaving the final recognition approval to the executive team.
 
 ![Recognition Results](Images/recognition-results.png)
