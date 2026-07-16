@@ -1,32 +1,33 @@
-//OFFICER CLASS - stores information about an officer and calculates information related to that officer //
-
-/* FIELDS - These fields support both the engagement score and the Officer Badge
- */
-
 public class Officer {
-    //Basic Information
+
+    // =========================================
+    // FIELDS
+    // =========================================
+
+    // Basic information
     private String name;
     private String position;
     private boolean completedOnboarding;
 
-    //Attendance
+    // Executive meeting attendance
     private int meetingsAttended;
     private int meetingsOffered;
 
-    //Responsibilities
+    // Role responsibilities
     private int roleTasksCompleted;
     private int roleTasksAssigned;
 
-    //Events
+    // AIS event participation
     private int eventsParticipated;
     private int eventsAvailable;
 
-    //Contributions & Initiative
+    // Contributions beyond assigned responsibilities
     private int initiativeActivities;
 
 
-    /* CONSTRUCTOR - The constructor allows us to create an officer and provide their information
-     */
+    // =========================================
+    // CONSTRUCTOR
+    // =========================================
 
     public Officer(String name, String position) {
         this.name = name;
@@ -46,111 +47,163 @@ public class Officer {
         initiativeActivities = 0;
     }
 
-    /// ////////
 
-    public void setCompletedOnboarding(boolean completedOnboarding) {
+    // =========================================
+    // GETTERS
+    // =========================================
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public boolean getCompletedOnboarding() {
+        return completedOnboarding;
+    }
+
+
+    // =========================================
+    // SETTERS
+    // =========================================
+
+    public void setCompletedOnboarding(
+            boolean completedOnboarding) {
+
         this.completedOnboarding = completedOnboarding;
     }
 
-    public void setMeetingsAttended(int meetingsAttended) {
+    public void setMeetingsAttended(
+            int meetingsAttended) {
+
         this.meetingsAttended = meetingsAttended;
     }
 
-    public void setMeetingsOffered(int meetingsOffered) {
+    public void setMeetingsOffered(
+            int meetingsOffered) {
+
         this.meetingsOffered = meetingsOffered;
     }
 
-    public void setRoleTasksCompleted(int roleTasksCompleted) {
+    public void setRoleTasksCompleted(
+            int roleTasksCompleted) {
+
         this.roleTasksCompleted = roleTasksCompleted;
     }
 
-    public void setRoleTasksAssigned(int roleTasksAssigned) {
+    public void setRoleTasksAssigned(
+            int roleTasksAssigned) {
+
         this.roleTasksAssigned = roleTasksAssigned;
     }
 
-    public void setEventsParticipated(int eventsParticipated) {
+    public void setEventsParticipated(
+            int eventsParticipated) {
+
         this.eventsParticipated = eventsParticipated;
     }
 
-    public void setEventsAvailable(int eventsAvailable) {
+    public void setEventsAvailable(
+            int eventsAvailable) {
+
         this.eventsAvailable = eventsAvailable;
     }
 
-    public void setInitiativeActivities(int initiativeActivities) {
+    public void setInitiativeActivities(
+            int initiativeActivities) {
+
         this.initiativeActivities = initiativeActivities;
     }
 
-    /* METHODS - action items and evaluations */
 
-    //this calculates the percentage of executive meetings the officer attended
-//formula - Meetings Attended / Meetings Offered x 100
+    // =========================================
+    // ENGAGEMENT CALCULATIONS
+    // =========================================
+
+    // Meetings attended ÷ meetings offered × 100
     public double calculateMeetingAttendance() {
+
         if (meetingsOffered == 0) {
             return 0;
         }
-        return (double) meetingsAttended / meetingsOffered * 100;
+
+        return (double) meetingsAttended
+                / meetingsOffered * 100;
     }
 
-    //this measures how many assigned responsibilities were completed
-//formula - Role Tasks Completed ÷ Role Tasks Assigned × 100
+
+    // Role tasks completed ÷ role tasks assigned × 100
     public double calculateRoleCompletion() {
+
         if (roleTasksAssigned == 0) {
             return 0;
         }
-        return (double) roleTasksCompleted / roleTasksAssigned * 100;
+
+        return (double) roleTasksCompleted
+                / roleTasksAssigned * 100;
     }
 
-    //this measures the officer's participation in available AIS events
-//formula - Events Participated In ÷ Events Available × 100
+
+    // Events participated in ÷ events available × 100
     public double calculateEventParticipation() {
+
         if (eventsAvailable == 0) {
             return 0;
         }
-        return (double) eventsParticipated / eventsAvailable * 100;
+
+        return (double) eventsParticipated
+                / eventsAvailable * 100;
     }
 
-    //this measures the officer’s progress toward the leadership and professional-growth target
-//formula - Growth Activities Completed ÷ Growth Target × 100
+
+    // Two initiative activities represent 100%
     public double calculateInitiativePercentage() {
-        int contributionTarget = 2;
+
+        int initiativeTarget = 2;
 
         double percentage =
                 (double) initiativeActivities
-                        / contributionTarget * 100;
+                        / initiativeTarget * 100;
 
         if (percentage > 100) {
             percentage = 100;
         }
+
         return percentage;
     }
 
-    //this method combines the four individual percentages into one overall engagement score
-/*Meeting Attendance = 80%
-Role Completion = 90%
-Event Participation = 75%
-Initiative = 100%
- */
+
+    /*
+     Engagement weights:
+
+     Executive meeting attendance = 25%
+     Role responsibility completion = 40%
+     Event participation = 20%
+     Initiative = 15%
+     */
     public double calculateEngagementScore() {
 
-        double meetingScore = calculateMeetingAttendance() * 0.25;
+        double meetingScore =
+                calculateMeetingAttendance() * 0.25;
 
-        double roleScore = calculateRoleCompletion() * 0.40;
+        double roleScore =
+                calculateRoleCompletion() * 0.40;
 
-        double eventScore = calculateEventParticipation() * 0.20;
+        double eventScore =
+                calculateEventParticipation() * 0.20;
 
-        double initiativeScore = calculateInitiativePercentage() * 0.15;
+        double initiativeScore =
+                calculateInitiativePercentage() * 0.15;
 
-        return meetingScore + roleScore + eventScore + initiativeScore;
+        return meetingScore
+                + roleScore
+                + eventScore
+                + initiativeScore;
     }
 
-    //this method converts numbers into words
-/*Business Rules:
-Score	Level
-85–100	Exceptional Engagement
-70–84	Highly Engaged
-50–69	Developing Engagement
-Below 50	Leadership Check-In Recommended
- */
+
     public String calculateEngagementLevel() {
 
         double score = calculateEngagementScore();
@@ -166,33 +219,44 @@ Below 50	Leadership Check-In Recommended
         }
     }
 
-    //this method prints everything about one officer
+
+    // =========================================
+    // OFFICER SUMMARY
+    // =========================================
+
     public void displayOfficerSummary() {
+
+        System.out.println();
         System.out.println("=================================");
-        System.out.println("          AIS ELEVATE            ");
-        System.out.println("        Officer Summary          ");
+        System.out.println("          AIS ELEVATE");
+        System.out.println("        Officer Summary");
         System.out.println("=================================");
 
         System.out.println("Officer: " + name);
         System.out.println("Position: " + position);
 
-        System.out.println("Meeting Attendance: "
-                + calculateMeetingAttendance() + "%");
+        System.out.printf(
+                "Meeting Attendance: %.1f%%%n",
+                calculateMeetingAttendance());
 
-        System.out.println("Role Completion: "
-                + calculateRoleCompletion() + "%");
+        System.out.printf(
+                "Role Completion: %.1f%%%n",
+                calculateRoleCompletion());
 
-        System.out.println("Event Participation: "
-                + calculateEventParticipation() + "%");
+        System.out.printf(
+                "Event Participation: %.1f%%%n",
+                calculateEventParticipation());
 
-        System.out.println("Initiative: "
-                + calculateInitiativePercentage() + "%");
+        System.out.printf(
+                "Initiative: %.1f%%%n",
+                calculateInitiativePercentage());
 
-        System.out.println("Engagement Score: "
-                + calculateEngagementScore());
+        System.out.printf(
+                "Engagement Score: %.1f%n",
+                calculateEngagementScore());
 
-        System.out.println("Engagement Level: "
-                + calculateEngagementLevel());
-
+        System.out.println(
+                "Engagement Level: "
+                        + calculateEngagementLevel());
     }
 }
