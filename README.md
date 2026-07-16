@@ -65,8 +65,10 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 - Recognition recommendations based on historical data
 
 
-## Welcome Screen
+![Welcome Screen](Images/welcome-screen.png)
 
-The application begins by collecting officer information for the monthly recognition review.
+![Officer Summary](Images/officer-summary.png)
 
-![Welcome Screen](screenshots/welcome-screen.png)
+![Recognition Menu](Images/recognition-menu.png)
+
+![Recognition Results](Images/recognition-results.png)
