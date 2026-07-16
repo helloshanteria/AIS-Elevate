@@ -63,3 +63,10 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 - Engagement forecasting
 - Leadership development trends
 - Recognition recommendations based on historical data
+
+
+## Welcome Screen
+
+The application begins by collecting officer information for the monthly recognition review.
+
+![Welcome Screen](screenshots/welcome-screen.png)
