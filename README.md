@@ -64,6 +64,22 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 - Leadership development trends
 - Recognition recommendations based on historical data
 
+## AI Use
+
+AI was used as a project mentor, systems-analysis assistant, and Java learning resource.
+
+AI supported the project by helping with:
+
+- Requirements planning
+- Business-rule development
+- Java concept explanations
+- Code troubleshooting
+- Engagement-model revisions
+- Recognition-workflow design
+- Documentation organization
+
+The application was not created as a one-click AI output. The final project direction, scoring model, recognition process, business rules, revisions, and implementation decisions were selected and refined by the developer.
+
 
 ## Application Workflow
 
