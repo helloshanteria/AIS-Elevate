@@ -123,8 +123,6 @@ The current version of AIS Elevate is a fully functional Java console applicatio
 
 The images below compare the current implementation with the planned future interface.
 
-## Future Desktop Interface (Concept)
-
 ![AIS Elevate Future Interface](Images/AIS_Elevate_Mockup.png)
 
 *Conceptual Java desktop interface illustrating the long-term vision for AIS Elevate. This mockup is not part of the current implementation and represents planned future development.*
