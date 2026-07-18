@@ -127,13 +127,4 @@ The images below compare the current implementation with the planned future inte
 
 ![AIS Elevate Future Interface](Images/AIS_Elevate_Mockup.png)
 
-*Figure 2. Conceptual Java desktop interface illustrating the long-term vision for AIS Elevate. This mockup is not part of the current implementation and represents planned future development.*
-
----
-
-## Current Java Application
-
-![AIS Elevate Java Application](Images/AIS_Elevate_App.png)
-
-*Figure 1. Current Java console application implementing officer engagement scoring, badge evaluation, and recognition workflows.*
-
+*Conceptual Java desktop interface illustrating the long-term vision for AIS Elevate. This mockup is not part of the current implementation and represents planned future development.*
