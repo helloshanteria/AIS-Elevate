@@ -4,19 +4,19 @@
 
 ## Overview
 
-AIS Elevate is a Java-based officer recognition and analytics platform designed for the Association for Information Systems (AIS) Student Chapter. The application transforms officer participation data into engagement insights and supports leadership by identifying officers who qualify for monthly recognition. This project is being developed as a long-term portfolio project and will continue to evolve throughout my Information Technology degree.
+AIS Elevate is a Java application created for the Association for Information Systems (AIS) Student Chapter. It helps leadership track officer participation, calculate engagement scores, and identify officers who qualify for monthly recognition. This project began as a class assignment and is continuing to grow as a long-term portfolio project throughout my Information Technology degree.
 
 ---
 
 ## Business Problem
 
-AIS leadership currently tracks officer attendance in Excel, but there is no structured system for measuring engagement, evaluating officer contributions, or supporting monthly recognition decisions. Leadership must manually review participation and determine recognition without consistent metrics or analytics.
+AIS leaders currently use Excel to track officer attendance, but attendance alone does not show how engaged an officer is. There is also no consistent way to recognize officers for completing tasks, participating in events, or contributing beyond meetings. Leadership must review this information manually each month, making the recognition process time-consuming and inconsistent.
 
 ---
 
 ## Solution
 
-AIS Elevate builds on the existing attendance tracker by calculating officer engagement, evaluating recognition criteria, and recommending officers who qualify for specific recognition categories. The system serves as a decision-support tool, allowing leadership to make informed and consistent recognition decisions while maintaining final approval authority.
+AIS Elevate makes the recognition process easier by collecting officer participation data, calculating engagement scores, evaluating badge criteria, and recommending officers for recognition. Instead of relying only on spreadsheets, leadership can use the application to support fair and consistent recognition decisions while keeping the final approval process in their hands.
 
 ---
 
@@ -37,7 +37,7 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 
 ---
 
-## Future Roadmap
+## Development Roadmap
 
 ### Version 1 – Java MVP ✅
 - Officer engagement calculations
@@ -47,14 +47,14 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 ### Version 2 – SQL Database
 - Store officer records
 - Store recognition history
-- Eliminate manual data entry
+- Reduce manual data entry
 
 ### Version 3 – Analytics Dashboard
 - Officer engagement trends
 - Recognition analytics
 - Executive reporting
 
-### Version 4 – AI Integration
+### Version 4 – AI Decision Support
 - AI-generated recognition summaries
 - Leadership insights
 - Officer growth recommendations
@@ -64,30 +64,33 @@ AIS Elevate builds on the existing attendance tracker by calculating officer eng
 - Leadership development trends
 - Recognition recommendations based on historical data
 
+---
 
 ## AI-Assisted Development Process
 
-AIS Elevate was developed through an iterative design process using AI as a collaborative development and learning tool rather than a code generator.
+AIS Elevate was developed over several stages using AI as a learning and development assistant rather than a code generator.
 
-Throughout the project, AI was used to brainstorm ideas, explain Java concepts, review object-oriented design decisions, and provide feedback on business requirements. Rather than accepting generated solutions as final, each feature was discussed, evaluated, and refined to ensure it aligned with the real-world needs of the AIS Student Chapter.
+Throughout the project, AI helped brainstorm ideas, explain Java concepts, improve the application's design, organize documentation, and refine business requirements. Instead of accepting AI-generated suggestions as final solutions, every feature was reviewed, tested, and improved to make sure it met the real needs of the AIS Student Chapter.
 
-As the project evolved, the focus shifted from building a simple engagement tracker to designing a leadership recognition platform. This transition came from continuously questioning the workflow, challenging assumptions, and redesigning the system to better reflect how leadership would actually conduct monthly officer recognition reviews.
+As the project grew, it evolved from a simple engagement tracker into a leadership recognition platform. This happened by continuously improving the workflow, refining the scoring system, and redesigning features to better support the monthly recognition process.
 
-The development process emphasized:
-- Identifying the business problem before writing code
+The development process focused on:
+
+- Understanding the business problem before writing code
 - Designing the recognition workflow before implementation
-- Translating organizational processes into software requirements
-- Iteratively refining the system architecture through discussion and testing
-- Learning Java concepts while applying them to a real-world project
+- Turning organizational processes into software requirements
+- Improving the system through testing and feedback
+- Learning Java while building a real-world application
 
-AI served as a mentor and technical resource throughout development, while all business decisions, project direction, scoring models, recognition criteria, and system requirements were intentionally designed and refined by the developer.
+AI served as a learning partner and technical resource throughout development. However, all business decisions, scoring models, recognition criteria, system requirements, and final implementation were designed, reviewed, and completed by the developer.
 
+---
 
 ## Application Workflow
 
 ### Welcome Screen
 
-The application begins by collecting officer information for the monthly recognition review. Leadership enters officer participation data, which is used to calculate engagement metrics and support the recognition evaluation process.
+The application begins by collecting officer information for the monthly recognition review. Leadership enters participation data, which is used to calculate engagement scores and support the recognition process.
 
 ![Welcome Screen](Images/welcome-screen.png)
 
@@ -95,7 +98,7 @@ The application begins by collecting officer information for the monthly recogni
 
 ### Officer Engagement Summary
 
-AIS Elevate calculates each officer's engagement using executive meeting attendance, role completion, event participation, and initiative contributions. The system generates an overall engagement score and engagement level to provide leadership with a quick overview of officer performance.
+AIS Elevate calculates each officer's engagement using meeting attendance, role completion, event participation, and initiative contributions. The application then generates an overall engagement score and engagement level to give leadership a quick summary of each officer's performance.
 
 ![Officer Summary](Images/officer-summary.png)
 
@@ -103,7 +106,7 @@ AIS Elevate calculates each officer's engagement using executive meeting attenda
 
 ### Monthly Recognition Review
 
-Leadership selects one recognition category to evaluate during the monthly review. Each category contains its own set of business rules and requirements, allowing officers to be evaluated consistently for a specific type of contribution.
+Leadership selects a recognition category to evaluate during the monthly review. Each category has its own requirements, allowing officers to be evaluated consistently based on their contributions.
 
 ![Recognition Menu](Images/recognition-menu.png)
 
@@ -111,7 +114,7 @@ Leadership selects one recognition category to evaluate during the monthly revie
 
 ### Recognition Results
 
-After evaluating all participating officers against the selected recognition criteria, AIS Elevate displays the officers who qualify for recognition. The system provides recommendations to support leadership decision-making while leaving the final recognition approval to the executive team.
+After all participating officers have been evaluated, AIS Elevate displays the officers who qualify for recognition. The application provides recommendations to support leadership, while the executive team makes the final recognition decision.
 
 ![Recognition Results](Images/recognition-results.png)
 
@@ -119,10 +122,10 @@ After evaluating all participating officers against the selected recognition cri
 
 # Future Interface Concept
 
-The current version of AIS Elevate is a fully functional Java console application. As I continue developing the project, the goal is to transition to a modern desktop interface while preserving the underlying business logic.
+The current version of AIS Elevate is a fully functional Java console application. As the project continues to grow, the goal is to develop a modern desktop interface while keeping the same business logic and recognition workflow.
 
-The images below compare the current implementation with the planned future interface.
+The image below shows a concept of what a future version of AIS Elevate could look like. It is a design mockup and is **not part of the current implementation**.
 
 ![AIS Elevate Future Interface](Images/AIS_Elevate_Mockup.png)
 
-*Conceptual Java desktop interface illustrating the long-term vision for AIS Elevate. This mockup is not part of the current implementation and represents planned future development.*
+*Conceptual desktop interface showing the long-term vision for AIS Elevate, including engagement tracking, officer management, and recognition analytics.*
