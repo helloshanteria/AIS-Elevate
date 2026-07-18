@@ -39,7 +39,7 @@ AIS Elevate makes the recognition process easier by collecting officer participa
 
 ## Development Roadmap
 
-### Version 1 – Java MVP ✅
+### Version 1 – Java MVP 
 - Officer engagement calculations
 - Recognition review workflow
 - Monthly badge evaluation
