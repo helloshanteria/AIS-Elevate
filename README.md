@@ -113,19 +113,15 @@ Leadership selects one recognition category to evaluate during the monthly revie
 
 After evaluating all participating officers against the selected recognition criteria, AIS Elevate displays the officers who qualify for recognition. The system provides recommendations to support leadership decision-making while leaving the final recognition approval to the executive team.
 
+![Recognition Results](Images/recognition-results.png)
+
+---
+
 # Future Interface Concept
 
 The current version of AIS Elevate is a fully functional Java console application. As I continue developing the project, the goal is to transition to a modern desktop interface while preserving the underlying business logic.
 
 The images below compare the current implementation with the planned future interface.
-
-## Current Java Application
-
-![AIS Elevate Java Application](Images/AIS_Elevate_App.png)
-
-*Figure 1. Current Java console application implementing officer engagement scoring, badge evaluation, and recognition workflows.*
-
----
 
 ## Future Desktop Interface (Concept)
 
@@ -133,4 +129,11 @@ The images below compare the current implementation with the planned future inte
 
 *Figure 2. Conceptual Java desktop interface illustrating the long-term vision for AIS Elevate. This mockup is not part of the current implementation and represents planned future development.*
 
-![Recognition Results](Images/recognition-results.png)
+---
+
+## Current Java Application
+
+![AIS Elevate Java Application](Images/AIS_Elevate_App.png)
+
+*Figure 1. Current Java console application implementing officer engagement scoring, badge evaluation, and recognition workflows.*
+
