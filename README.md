@@ -129,3 +129,42 @@ The image below shows a concept of what a future version of AIS Elevate could lo
 ![AIS Elevate Future Interface](Images/AIS_Elevate_Mockup.png)
 
 *Conceptual desktop interface showing the long-term vision for AIS Elevate, including engagement tracking, officer management, and recognition analytics.*
+
+---
+
+## Live Website
+
+AIS Elevate extends beyond the Java application with a professional project website and an interactive live demonstration.
+
+As a Data Science & Analytics student and President of the Association for Information Systems (AIS) Student Chapter, I created AIS Elevate to demonstrate how software engineering and data analytics can transform participation into meaningful insights. While inspired by student leadership, the platform can also be adapted for businesses to improve employee engagement, recognize high-performing employees, measure participation, and support data-driven management decisions.
+
+### Project Links
+
+**Website:** https://aiselevate.my.canva.site/website
+
+**Interactive Live Demo:** *(Add your Canva Code demo link here)*
+
+### Design & Development Process
+
+The website and interactive demonstration were designed using Canva Websites and Canva Code to showcase the project in a modern, user-friendly format. The design process focused on creating a software product experience rather than a traditional class project presentation.
+
+The development process included:
+
+- Planning the user experience and website structure
+- Designing a responsive software landing page
+- Creating high-fidelity UI mockups
+- Developing an interactive prototype with Canva Code
+- Integrating live engagement scoring and reporting features
+- Refining the interface through iterative design improvements
+
+### What You'll Find
+
+- Project overview and business problem
+- Interactive live demonstration
+- Engagement scoring and badge system
+- Monthly reporting demonstration
+- Technology stack
+- Project documentation
+- Future enhancements
+
+The interactive live demo allows visitors to enter sample participation data, calculate engagement scores, generate recognition badges, and generate monthly reports to experience the platform firsthand.
