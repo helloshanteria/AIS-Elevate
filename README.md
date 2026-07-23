@@ -142,7 +142,7 @@ As a Data Science & Analytics student and President of the Association for Infor
 
 **Website:** https://aiselevate.my.canva.site/website
 
-**Interactive Live Demo:** *(Add your Canva Code demo link here)*
+**Interactive Live Demo:** https://aiselevate.my.canva.site/
 
 ### Design & Development Process
 
