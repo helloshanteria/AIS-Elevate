@@ -190,3 +190,13 @@ The database was designed using relational database principles with primary and 
 - Aggregate reporting (AVG, COUNT)
 - Database testing and validation
 
+## SQL Query Demonstrations
+
+The following examples demonstrate the SQL queries used to validate the AIS Elevate database and generate officer engagement reports.
+
+### Recognition History Query
+
+This query joins the **Officers** and **RecognitionHistory** tables to display officer badge awards, review periods, and recognition dates. It demonstrates the use of relational database joins to retrieve meaningful information from multiple related tables while maintaining a normalized database structure.
+
+![Recognition History Query](Images/recognition_history_query.png)
+
