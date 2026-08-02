@@ -1,0 +1,72 @@
+# AIS Elevate Database Documentation
+
+## Overview
+
+The AIS Elevate SQLite database stores officer information, monthly engagement results, and recognition history. This database supports the Java application by organizing information into related tables instead of storing all data directly inside the program.
+
+The database was created using DB Browser for SQLite.
+
+---
+
+## Database Tables
+
+### Officers
+
+The `Officers` table stores basic information about each AIS officer.
+
+| Column | Purpose |
+|---|---|
+| officer_id | Unique ID for each officer |
+| first_name | Officer's first name |
+| last_name | Officer's last name |
+| position | Officer's leadership role |
+| completed_onboarding | Shows whether onboarding was completed |
+| active_status | Shows whether the officer is currently active |
+
+---
+
+### MonthlyEngagement
+
+The `MonthlyEngagement` table stores officer participation and performance data for each monthly review.
+
+| Column | Purpose |
+|---|---|
+| engagement_id | Unique ID for each monthly engagement record |
+| officer_id | Connects the record to an officer |
+| review_month | Month being reviewed |
+| meetings_attended | Number of meetings attended |
+| role_tasks_completed | Number of assigned tasks completed |
+| events_participated | Number of events attended |
+| events_available | Number of available events |
+| initiative_activities | Number of extra initiative activities completed |
+| engagement_score | Overall engagement score |
+| engagement_level | Engagement rating, such as Good, Excellent, or Outstanding |
+
+---
+
+### RecognitionHistory
+
+The `RecognitionHistory` table stores the badges and recognition earned by officers.
+
+| Column | Purpose |
+|---|---|
+| recognition_id | Unique ID for each recognition record |
+| officer_id | Connects the recognition to an officer |
+| review_month | Month of the recognition review |
+| badge_name | Name of the badge earned |
+| recognition_date | Date the recognition was recorded |
+
+---
+
+## Table Relationships
+
+The database uses `officer_id` to connect the tables.
+
+```text
+Officers
+   |
+   | officer_id
+   |
+   +---- MonthlyEngagement
+   |
+   +---- RecognitionHistory
