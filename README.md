@@ -168,3 +168,25 @@ The development process included:
 - Future enhancements
 
 The interactive live demo allows visitors to enter sample participation data, calculate engagement scores, generate recognition badges, and generate monthly reports to experience the platform firsthand.
+
+## Database Implementation
+
+Version 2 of AIS Elevate introduces a relational SQLite database that replaces hardcoded officer information with persistent data storage.
+
+The database consists of three related tables:
+
+- **Officers** – Stores executive officer information.
+- **MonthlyEngagement** – Stores monthly participation metrics and engagement scores.
+- **RecognitionHistory** – Stores badge awards and recognition history.
+
+The database was designed using relational database principles with primary and foreign keys to maintain data integrity and support future application growth.
+
+### SQL Features Demonstrated
+
+- Relational database design
+- Primary and foreign keys
+- INSERT, SELECT, JOIN
+- Filtering and sorting
+- Aggregate reporting (AVG, COUNT)
+- Database testing and validation
+
