@@ -1,72 +1,49 @@
-# AIS Elevate Database Documentation
+Database Development Summary
+Overview
 
-## Overview
+As part of the continued development of AIS Elevate, a SQLite database was designed and implemented to replace hardcoded officer information with a structured, relational data model. The database serves as the application's data layer and provides persistent storage for officer records, monthly engagement evaluations, and recognition history.
 
-The AIS Elevate SQLite database stores officer information, monthly engagement results, and recognition history. This database supports the Java application by organizing information into related tables instead of storing all data directly inside the program.
+The implementation focused on applying relational database design principles while preparing the application for future Java database integration using JDBC.
 
-The database was created using DB Browser for SQLite.
+Database Implementation
 
----
+Three relational tables were created to organize application data:
 
-## Database Tables
+Officers stores executive officer information.
+MonthlyEngagement stores monthly participation metrics used to evaluate officer engagement.
+RecognitionHistory stores badge awards and recognition records for each review period.
 
-### Officers
+Relationships between the tables were established using primary and foreign keys to maintain data integrity and eliminate duplicate information.
 
-The `Officers` table stores basic information about each AIS officer.
+Database Testing
 
-| Column | Purpose |
-|---|---|
-| officer_id | Unique ID for each officer |
-| first_name | Officer's first name |
-| last_name | Officer's last name |
-| position | Officer's leadership role |
-| completed_onboarding | Shows whether onboarding was completed |
-| active_status | Shows whether the officer is currently active |
+After creating the database structure, sample officer data was inserted into each table to verify functionality. SQL queries were executed to confirm successful data insertion, validate relationships between tables, and test the accuracy of business reports.
 
----
+The completed implementation successfully generated:
 
-### MonthlyEngagement
+Officer engagement summaries
+Officer rankings based on engagement scores
+Outstanding officer reports
+Average organizational engagement scores
+Engagement level distributions
+Officer recognition history
 
-The `MonthlyEngagement` table stores officer participation and performance data for each monthly review.
+During development, an issue involving an incorrectly configured foreign key prevented records from being inserted into the MonthlyEngagement table. The table was recreated with the appropriate foreign key relationship, resolving the issue and allowing data to be stored successfully.
 
-| Column | Purpose |
-|---|---|
-| engagement_id | Unique ID for each monthly engagement record |
-| officer_id | Connects the record to an officer |
-| review_month | Month being reviewed |
-| meetings_attended | Number of meetings attended |
-| role_tasks_completed | Number of assigned tasks completed |
-| events_participated | Number of events attended |
-| events_available | Number of available events |
-| initiative_activities | Number of extra initiative activities completed |
-| engagement_score | Overall engagement score |
-| engagement_level | Engagement rating, such as Good, Excellent, or Outstanding |
+Technical Skills Applied
 
----
+The database implementation provided hands-on experience with relational database design and SQL development, including:
 
-### RecognitionHistory
+SQLite database design
+Primary and foreign key relationships
+Data normalization
+SQL data insertion and retrieval
+Multi-table joins
+Filtering, sorting, and grouping data
+Aggregate reporting using COUNT() and AVG()
+Database testing and troubleshooting
+Outcome
 
-The `RecognitionHistory` table stores the badges and recognition earned by officers.
+The successful implementation of the SQLite database represents the completion of Version 2 of the AIS Elevate prototype. The application now includes a fully functional relational database capable of storing officer information, engagement metrics, and recognition history.
 
-| Column | Purpose |
-|---|---|
-| recognition_id | Unique ID for each recognition record |
-| officer_id | Connects the recognition to an officer |
-| review_month | Month of the recognition review |
-| badge_name | Name of the badge earned |
-| recognition_date | Date the recognition was recorded |
-
----
-
-## Table Relationships
-
-The database uses `officer_id` to connect the tables.
-
-```text
-Officers
-   |
-   | officer_id
-   |
-   +---- MonthlyEngagement
-   |
-   +---- RecognitionHistory
+The next phase of development will focus on integrating the Java application with the SQLite database using JDBC, allowing the application to retrieve, update, and manage data dynamically instead of relying on hardcoded values.
