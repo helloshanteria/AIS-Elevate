@@ -126,7 +126,7 @@ The current version of Elevate Insights is a fully functional Java console appli
 
 The image below shows a concept of what a future version of Elevate Insights could look like. It is a design mockup and is **not part of the current implementation**.
 
-![Elevate Insights Future Interface](Images/AIS_Elevate_Mockup.png)
+![Elevate Insights Future Interface](Images/elevate_insights.png)
 
 *Conceptual desktop interface showing the long-term vision for Elevate Insights, including engagement tracking, officer management, and recognition analytics.*
 
