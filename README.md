@@ -1,10 +1,10 @@
-# AIS Elevate
+# Elevate Insights
 
 ## Officer Recognition & Analytics Platform
 
 ## Overview
 
-AIS Elevate is a Java application created for the Association for Information Systems (AIS) Student Chapter. It helps leadership track officer participation, calculate engagement scores, and identify officers who qualify for monthly recognition. This project began as a class assignment and is continuing to grow as a long-term portfolio project throughout my Information Technology degree.
+Elevate Insights is a Java application created for the Association for Information Systems (AIS) Student Chapter. It helps leadership track officer participation, calculate engagement scores, and identify officers who qualify for monthly recognition. This project began as a class assignment and is continuing to grow as a long-term portfolio project throughout my Information Technology degree.
 
 ---
 
@@ -16,7 +16,7 @@ AIS leaders currently use Excel to track officer attendance, but attendance alon
 
 ## Solution
 
-AIS Elevate makes the recognition process easier by collecting officer participation data, calculating engagement scores, evaluating badge criteria, and recommending officers for recognition. Instead of relying only on spreadsheets, leadership can use the application to support fair and consistent recognition decisions while keeping the final approval process in their hands.
+Elevate Insights makes the recognition process easier by collecting officer participation data, calculating engagement scores, evaluating badge criteria, and recommending officers for recognition. Instead of relying only on spreadsheets, leadership can use the application to support fair and consistent recognition decisions while keeping the final approval process in their hands.
 
 ---
 
@@ -68,7 +68,7 @@ AIS Elevate makes the recognition process easier by collecting officer participa
 
 ## AI-Assisted Development Process
 
-AIS Elevate was developed over several stages using AI as a learning and development assistant rather than a code generator.
+Elevate Insights was developed over several stages using AI as a learning and development assistant rather than a code generator.
 
 Throughout the project, AI helped brainstorm ideas, explain Java concepts, improve the application's design, organize documentation, and refine business requirements. Instead of accepting AI-generated suggestions as final solutions, every feature was reviewed, tested, and improved to make sure it met the real needs of the AIS Student Chapter.
 
@@ -98,7 +98,7 @@ The application begins by collecting officer information for the monthly recogni
 
 ### Officer Engagement Summary
 
-AIS Elevate calculates each officer's engagement using meeting attendance, role completion, event participation, and initiative contributions. The application then generates an overall engagement score and engagement level to give leadership a quick summary of each officer's performance.
+Elevate Insights calculates each officer's engagement using meeting attendance, role completion, event participation, and initiative contributions. The application then generates an overall engagement score and engagement level to give leadership a quick summary of each officer's performance.
 
 ![Officer Summary](Images/officer-summary.png)
 
@@ -114,7 +114,7 @@ Leadership selects a recognition category to evaluate during the monthly review.
 
 ### Recognition Results
 
-After all participating officers have been evaluated, AIS Elevate displays the officers who qualify for recognition. The application provides recommendations to support leadership, while the executive team makes the final recognition decision.
+After all participating officers have been evaluated, Elevate Insights displays the officers who qualify for recognition. The application provides recommendations to support leadership, while the executive team makes the final recognition decision.
 
 ![Recognition Results](Images/recognition-results.png)
 
@@ -122,21 +122,21 @@ After all participating officers have been evaluated, AIS Elevate displays the o
 
 # Future Interface Concept
 
-The current version of AIS Elevate is a fully functional Java console application. As the project continues to grow, the goal is to develop a modern desktop interface while keeping the same business logic and recognition workflow.
+The current version of Elevate Insights is a fully functional Java console application. As the project continues to grow, the goal is to develop a modern desktop interface while keeping the same business logic and recognition workflow.
 
-The image below shows a concept of what a future version of AIS Elevate could look like. It is a design mockup and is **not part of the current implementation**.
+The image below shows a concept of what a future version of Elevate Insights could look like. It is a design mockup and is **not part of the current implementation**.
 
-![AIS Elevate Future Interface](Images/AIS_Elevate_Mockup.png)
+![Elevate Insights Future Interface](Images/AIS_Elevate_Mockup.png)
 
-*Conceptual desktop interface showing the long-term vision for AIS Elevate, including engagement tracking, officer management, and recognition analytics.*
+*Conceptual desktop interface showing the long-term vision for Elevate Insights, including engagement tracking, officer management, and recognition analytics.*
 
 ---
 
 ## Live Website
 
-AIS Elevate extends beyond the Java application with a professional project website and an interactive live demonstration.
+Elevate Insightsextends beyond the Java application with a professional project website and an interactive live demonstration.
 
-As a Data Science & Analytics student and President of the Association for Information Systems (AIS) Student Chapter, I created AIS Elevate to demonstrate how software engineering and data analytics can transform participation into meaningful insights. While inspired by student leadership, the platform can also be adapted for businesses to improve employee engagement, recognize high-performing employees, measure participation, and support data-driven management decisions.
+As a Data Science & Analytics student and President of the Association for Information Systems (AIS) Student Chapter, I created Elevate Insights to demonstrate how software engineering and data analytics can transform participation into meaningful insights. While inspired by student leadership, the platform can also be adapted for businesses to improve employee engagement, recognize high-performing employees, measure participation, and support data-driven management decisions.
 
 ### Project Links
 
@@ -171,7 +171,7 @@ The interactive live demo allows visitors to enter sample participation data, ca
 
 ## Database Implementation
 
-Version 2 of AIS Elevate introduces a relational SQLite database that replaces hardcoded officer information with persistent data storage.
+Version 2 of Elevate Insights introduces a relational SQLite database that replaces hardcoded officer information with persistent data storage.
 
 The database consists of three related tables:
 
@@ -192,7 +192,7 @@ The database was designed using relational database principles with primary and 
 
 ## SQL Query Demonstrations
 
-The following examples demonstrate the SQL queries used to validate the AIS Elevate database and generate officer engagement reports.
+The following examples demonstrate the SQL queries used to validate the Elevate Insights database and generate officer engagement reports.
 
 ### Recognition History Query
 
